@@ -1,9 +1,9 @@
 {
-  "name": "Geez Userbot",
-  "description": "[GeezUserbot] userbot Telegram modular yang berjalan pada Python 3.9+",
+  "name": "Zelzal Userbot",
+  "description": "[ZelzalUserbot] userbot Telegram modular yang berjalan pada Python 3.9+",
   "logo": "https://telegra.ph/file/02b3dbeb4df30582f0d66.jp",
-  "keywords": ["telegram", "userbot", "geezprojects", "modular", "python"],
-  "repository": "https://github.com/vckyou/GeezProjects",
+  "keywords": ["telegram", "userbot", "ZelzalBot", "modular", "python"],
+  "repository": "https://github.com/Zed-Thon/ZelzalBot",
   "stack": "container",
   "env": {
     "API_KEY": {
