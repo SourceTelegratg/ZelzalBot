@@ -23,6 +23,6 @@ jobs:
           commit_message: 'geezprojects: auto fixes'
           commit_options: '--no-verify --signoff'
           repository: .
-          commit_user_name: vckyou
-          commit_user_email: viicky.auliaz@gmail.com 
-          commit_author: vckyou <viicky.auliaz@gmail.com>
+          commit_user_name: Zed-Thon
+          commit_user_email: zelzalyas@gmail.com 
+          commit_author: Zed-Thon <zelzalyas@gmail.com>
