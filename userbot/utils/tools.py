@@ -323,8 +323,8 @@ async def bash(cmd):
 
 def post_to_telegraph(title, html_format_content):
     post_client = TelegraphPoster(use_api=True)
-    auth_name = "GeezProjects"
-    auth_url = "https://github.com/vckyou/GeezProjects"
+    auth_name = "ZelzalBot"
+    auth_url = "https://github.com/Zed-Thon/ZelzalBot"
     post_client.create_api_token(auth_name)
     post_page = post_client.post(
         title=title,
