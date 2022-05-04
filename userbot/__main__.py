@@ -20,7 +20,7 @@ try:
     call_py.start()
     user = bot.get_me()
     blacklistgeez = requests.get(
-        "https://raw.githubusercontent.com/vckyou/Reforestation/master/blacklistgeez.json"
+        "https://raw.githubusercontent.com/Zed-Thon/Reforestation/master/blacklistzed.json"
     ).json()
     if user.id in blacklistgeez:
         LOGS.warning(
@@ -39,7 +39,7 @@ for module_name in ALL_MODULES:
     imported_module = import_module("userbot.modules." + module_name)
 
 LOGS.info(f"Total Clients = {total} User")
-LOGS.info(f"Jika {user.first_name} Membutuhkan Bantuan, Silahkan Tanyakan di Grup https://t.me/GeezSupport")
+LOGS.info(f"Jika {user.first_name} Membutuhkan Bantuan, Silahkan Tanyakan di Grup https://t.me/ZedThon")
 LOGS.info(f"💢 Geez - Projects Berhasil Diaktfikan 💢")
 
 
