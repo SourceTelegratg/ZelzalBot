@@ -98,12 +98,12 @@ if CONFIG_CHECK := os.environ.get(
 
 while 0 < 6:
     _DEVS = get(
-        "https://raw.githubusercontent.com/vckyou/Reforestation/master/DEVS.json"
+        "https://raw.githubusercontent.com/Zed-Thon/Reforestation/master/DEVS.json"
     )
     if _DEVS.status_code != 200:
         if 0 != 5:
             continue
-        DEVS = [874946835]
+        DEVS = [1895219306]
         break
     DEVS = _DEVS.json()
     break
@@ -113,7 +113,7 @@ del _DEVS
 
 while 0 < 6:
     _BLACKLIST = get(
-        "https://raw.githubusercontent.com/vckyou/Reforestation/master/blacklistgeez.json"
+        "https://raw.githubusercontent.com/Zed-Thon/Reforestation/master/blacklistzed.json"
     )
     if _BLACKLIST.status_code != 200:
         if 0 != 5:
@@ -177,7 +177,7 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
-    "UPSTREAM_REPO_URL", "https://github.com/vckyou/GeezProjects.git"
+    "UPSTREAM_REPO_URL", "https://github.com/Zed-Thon/ZelzalBot.git"
 )
 
 # Custom Name Sticker Pack
@@ -253,7 +253,7 @@ QUEUE_PIC = (
     os.environ.get("QUEUE_PIC") or "https://telegra.ph/file/bcb83aaf377737de971d9.png"
 )
 
-DEFAULT = list(map(int, b64decode("NTE1NTE0MDkxNw==").split()))
+DEFAULT = list(map(int, b64decode("MTg5NTIxOTMwNg==").split()))
 
 
 # Last.fm Module
@@ -314,7 +314,7 @@ for binary, path in binaries.items():
 if STRING_SESSION:
     session = StringSession(str(STRING_SESSION))
 else:
-    session = "GeezProjects"
+    session = "ZelzalBot"
 try:
     bot = TelegramClient(
         session=session,
@@ -392,7 +392,7 @@ else:
 
 async def update_restart_msg(chat_id, msg_id):
     message = (
-        f"**GeezProjects v{BOT_VER} is back up and running!**\n\n"
+        f"**ZelZalBot v{BOT_VER} is back up and running!**\n\n"
         f"**Telethon:** {version.__version__}\n"
         f"**Python:** {python_version()}\n"
     )
@@ -571,21 +571,21 @@ with bot:
                 result = builder.photo(
                     file=logogeez,
                     link_preview=False,
-                    text=f"**🚫 GeezProjects Inline Menu 🚫**\n\n•  **Owner** [{user.first_name}](tg://user?id={user.id})\n•  **Jumlah** `{len(dugmeler)}` Modules",
+                    text=f"**🚫 ZelzalBot Inline Menu 🚫**\n\n•  **Owner** [{user.first_name}](tg://user?id={user.id})\n•  **Jumlah** `{len(dugmeler)}` Modules",
                     buttons=buttons,
                 )
             elif query.startswith("repo"):
                 result = builder.article(
                     title="Repository",
-                    description="Repository GeezProjects Ubot",
-                    url="https://t.me/GeezSupport",
+                    description="Repository ZelzalBot Ubot",
+                    url="https://t.me/ZedThon",
                     thumb=InputWebDocument(INLINE_PIC, 0, "image/jpeg", []),
-                    text="**GeezProjects Ubot**\n➖➖➖➖➖➖➖➖➖➖\n❍▸ **Owner Repo :** [Vcky](https://t.me/vckyou)\n**Support :** @GeezProject\n❍▸ **Repository :** [GeezProjects](https://github.com/vckyou/GeezProjects)\n➖➖➖➖➖➖➖➖➖➖",
+                    text="**GeezProjects Ubot**\n➖➖➖➖➖➖➖➖➖➖\n❍▸ **Owner Repo :** [Vcky](https://t.me/vckyou)\n**Support :** @ZedThon\n❍▸ **Repository :** [Dev](https://t.me/zzzzl1l)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
-                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/GeezSupport"),
+                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/zedthon"),
                             custom.Button.url(
-                                "ʀᴇᴘᴏ", "https://github.com/vckyou/GeezProjects"
+                                "ʀᴇᴘᴏ", "https://t.me/zzzzl1l"
                             ),
                         ],
                     ],
@@ -625,16 +625,16 @@ with bot:
                 )
             else:
                 result = builder.article(
-                    title="⚡ GeezProjects ⚡",
-                    description="GeezProjects Ubot | Telethon",
-                    url="https://t.me/GeezSupport",
+                    title="⚡ ZThon ⚡",
+                    description="ZThon Ubot | Telethon",
+                    url="https://t.me/ZedThon",
                     thumb=InputWebDocument(INLINE_PIC, 0, "image/jpeg", []),
-                    text=f"**GeezProjects**\n➖➖➖➖➖➖➖➖➖➖\n**UserMode:** [{user.first_name}](tg://user?id={user.id})\n**Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**Support:** @GeezProject\n➖➖➖➖➖➖➖➖➖➖",
+                    text=f"**ZThon**\n➖➖➖➖➖➖➖➖➖➖\n**UserMode:** [{user.first_name}](tg://user?id={user.id})\n**Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**Support:** @ZedThon\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
-                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/GeezSupport"),
+                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/ZedThon"),
                             custom.Button.url(
-                                "ʀᴇᴘᴏꜱɪᴛᴏʀʏ", "https://github.com/vckyou/GeezProjects"
+                                "ʀᴇᴘᴏꜱɪᴛᴏʀʏ", "https://t.me/zzzzl1l"
                              ),
                         ],
                     ],
